@@ -285,7 +285,6 @@ img{
 }
 
 /* Hero Section */
-#hero{}
 #hero .container{
     display: flex;
     flex-direction: column;
@@ -463,10 +462,6 @@ img{
 #stars .text{
     order: 2;
 }
-#benifit .text p,
-#stars .text p{}
-#benifit .text h3,
-#stars .text h3{}
 
 #benifit .text ul{
     list-style: none;
@@ -499,9 +494,6 @@ img{
 #stars .text .counters .counter p{
     font-size: .9rem;
 }
-#stars .text button{}
-
-
 
 /* ===================================
 ** Features Showcase Section
@@ -635,8 +627,6 @@ img{
 #products .products .product .price .sale{
     color: var(--primary-color-main);
 }
-#products .products .product button{}
-
 
 /* ==================================
 ** Viggie Food Section
@@ -662,12 +652,10 @@ img{
     color: #fff;
     margin-bottom: 15px;
 }
-#viggeie-food button{}
 
 /* ===================================
 ** Footer
 ** =================================== */
-#main-footer{}
 #main-footer .container{}
 #main-footer .first-row{
     display: flex;
@@ -688,8 +676,6 @@ img{
 #main-footer .first-row .widgets2,
 #main-footer .first-row .widgets3{
     flex: 1 0 200px;
-}
-#main-footer .first-row .widgets1{
 }
 #main-footer .first-row .widgets1 .logo{
     margin-bottom: 25px;
@@ -850,10 +836,6 @@ img{
     #main-header #main-menue {
         flex: 2;
     }
-    #main-header #main-menue ul {
-        /* justify-content: flex-end; */
-    }
-
     /* Hero Section */
     #hero{
         background: var(--primary-color-light);
@@ -885,9 +867,6 @@ img{
     #hero .text p{
         margin-bottom: 1.75rem;
         line-height: 1.5;
-    }
-    #hero .text button{
-
     }
     #hero .media {
         align-self: unset;
@@ -923,7 +902,6 @@ img{
     #hero .media .rating-area p{
         font-size: .9rem;
     }
-    #hero .media .rating-area .rating{}
     #hero .media .rating-area .rating i{
         color: var(--primary-color-main);
     }
@@ -944,11 +922,6 @@ img{
         font-size: .9rem;
         box-shadow: 5px 2px 8px -2px rgba(0,0,0,.4);
     }
-    #hero .media .testimonial .avatar{}
-    #hero .media .testimonial .avatar img{}
-    #hero .media .testimonial .message{}
-    #hero .media .testimonial .message p{}
-
     /* ===================================
     **  Brands Section
     ** =================================== */
@@ -965,8 +938,6 @@ img{
     #brands .brand{
         flex: 0 0 auto;
     }
-    #brands .brand img{}
-
     /* ====================================
     ** Features Section
     ** ==================================== */
@@ -1038,8 +1009,6 @@ img{
     #products .text{
         text-align: left;
     }
-    #products .text p{}
-    #products .text h3{}
     #products .products{
         flex-direction: row;
         flex-wrap: wrap;
@@ -1066,13 +1035,10 @@ img{
         font-size: 3.5rem;
         margin-bottom: 15px;
     }
-    #viggeie-food button{}
 
     /* ===================================
     ** Footer
     ** =================================== */
-    #main-footer{}
-    #main-footer .container{}
     #main-footer .first-row{
         flex-direction: row;
         justify-content: space-between;
@@ -1127,9 +1093,6 @@ img{
         text-align: center;
         padding: 2rem;
     }
-    #main-footer .second-row p{}
-
-
 }
 /* xl */
 @media (min-width: 1280px) {
