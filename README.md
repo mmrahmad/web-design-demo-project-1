@@ -22,4 +22,8 @@ It's from Figma [UI]('https://www.figma.com/file/eRttu9aYFD4xqccpPi4w5e/')
 ### Styling
 - Import Fonts
 - Start from :root
-
+- - Define variables in root
+- All color setup in variable so that I can change at any time & It’s helping me to implement dark mode
+- Basic fonts configuration in the body tag
+- Common useable classes define
+- Then select all sections and children;
