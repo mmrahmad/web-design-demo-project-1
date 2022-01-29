@@ -49,7 +49,7 @@ My Root Here for this project
     --button-width: 100%;
 }
 ```
-Then When I try to dark mood then I change the variables values using JavaScript event listener
+Then When I try to dark mood then I change the values of the variables using JavaScript event listener
 ``` js
 element.addEventListener('click', e => {
    if (e.target.innerText === "Dark") {
@@ -75,10 +75,10 @@ element.addEventListener('click', e => {
 ```
 
 >> Note:
->> I cange background color without difine in rool. Excualy I use var(---body-color, #fff) in body tag. Thats why I able to change the variable in JS.
+>> I change the background color without defining the root. Excualy I use var(---body-color, #fff) in body tag. That's why I was able to change the variable in JS.
 
 ### Responsive:
-I start CSS following google standards. First, I fixed small size device (Mobile) then for large devices;
+I start CSS following google standards. First, I fixed small size device (Mobile) than for large devices;
 
 ``` css
 /* sm	 */
