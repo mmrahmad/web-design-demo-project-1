@@ -2,7 +2,7 @@
 ### This is a Web Design Demo project using HTML, CSS & JavaScript.
 ---
 
-To Watch Video Click Here:
+To Watch Video Click On Image:
 [![Watch the video](https://user-images.githubusercontent.com/75246159/151648570-3e0bb63a-f25d-4a06-90d8-b969ab624435.PNG)](https://www.youtube.com/watch?v=28FwZHeXjR8)
 
 **[Live Demo Here](https://modest-poincare-8685c1.netlify.app/)**
