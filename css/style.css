@@ -532,9 +532,6 @@ img{
     padding: 3rem;
     padding-right: 5rem;
     border: 2px solid var(--primary-color-main);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 #showcase .grid-section .text-item h5{
     font-size: calc(2.5rem + 1vw);
@@ -983,7 +980,9 @@ img{
     }
     #showcase .grid-section .media-item,
     #showcase .grid-section .text-item{
-        flex: 1 0 25%;
+        flex: 1 0 24%;
+        width: 290px;
+        height: 290px;
     }
     #showcase .grid-section .media-item{
         overflow: hidden;
@@ -991,16 +990,28 @@ img{
     }
     #showcase .grid-section .media-item img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     #showcase .grid-section .text-item {
-        padding: 1rem 1rem 0.25rem;
+        padding: 2.5rem 3rem 2.5rem 1.5rem;
         border-width: 1px;
     }
     #showcase .grid-section .text-item h5 {
-        font-size: calc(1rem + 1vw);
+        font-size: 2rem;
+        font-weight: 500;
     }
     #showcase .grid-section .text-item .btn{
         padding: .75rem 1rem;
+    }
+    #showcase .grid-section div:nth-child(8){
+        order: 7;
+    }
+    #showcase .grid-section div:nth-child(7){
+        order: 8;
+    }
+    #showcase .grid-section div:nth-child(5){
+        order: 6;
     }
 
     /* =======================================
