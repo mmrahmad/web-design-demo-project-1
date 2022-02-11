@@ -91,6 +91,7 @@ img{
 .outline-btn::after{
     background: url('/img/icons/color-right-arow.svg');
     background-repeat: no-repeat;
+    background-size: 90%;
 }
 @keyframes btnAnimation {
     from{
@@ -106,7 +107,7 @@ img{
 
 .section-sub-heading,
 .section-heading{
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.4;
 }
 .section-sub-heading{
@@ -114,7 +115,7 @@ img{
     margin-bottom: 20px;
 }
 .section-heading{
-    font-size: calc(2rem + 2vw);
+    font-size: calc(1.5rem + 2vw);
     margin-bottom: 2rem;
 }
 .section-heading::after{
@@ -291,7 +292,7 @@ img{
 }
 #hero .text{
     flex: 1;
-    padding: 2rem .5rem 8rem;
+    padding: 2rem .5rem 4rem;
     text-align: center;
 }
 #hero .text h1{
@@ -302,18 +303,17 @@ img{
 }
 #hero .text p{
     line-height: 1.5;
-    margin: 0 auto 1.75rem;
+    margin: 0 auto 3.5rem;
 }
 #hero .text button{
-    justify-content: space-around;
+    justify-content: center;
     letter-spacing: 2px;
 }
 #hero .media{
     flex: 1;
     position: relative;
 }
-#hero .media .hero-img{}
-#hero .media .hero-img img.hero-main-image{}
+
 #hero .media .hero-img img.dots{
     position: absolute;
     bottom: 0;
@@ -327,6 +327,7 @@ img{
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 15px;
     background: var(--text-white);
@@ -389,7 +390,7 @@ img{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 50px 10px;
+    gap: 80px 10px;
     padding: 3.5rem 0;
     border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
@@ -411,10 +412,12 @@ img{
     align-items: center;
 }
 #features .feature-item .icon img{}
-#features .feature-item .text{}
+#features .feature-item .text{
+    text-align: center;
+}
 #features .feature-item .text h4{
     font-size: 1.2rem;
-    margin-bottom: .4rem;
+    margin-bottom: .75rem;
 }
 #features .feature-item .text p{
     font-size: .8rem;
@@ -435,20 +438,28 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5.25rem;
+    gap: 2.5rem 5.25rem;
 }
 #benifit .media,
 #stars .media{
     flex: 1;
+    width: 100%;
     background-color: var(--primary-color-light);
     display: flex;
     justify-content: center;
-    padding-bottom: 4rem;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
-#benifit .media img,
-#stars .media img{
-    width: 80%;
+#benifit .media picture,
+#stars .media picture{
+    width: 85%;
     margin: 0 auto;
+    transform: translateY(-4rem);
+}
+#benifit .media picture *,
+#stars .media picture *{
+    width: 100%;
 }
 
 #benifit .text,
@@ -494,6 +505,10 @@ img{
 #stars .text .counters .counter p{
     font-size: .9rem;
 }
+#stars .text button{
+   width: 100%;
+   justify-content: center;
+}
 
 /* ===================================
 ** Features Showcase Section
@@ -504,6 +519,7 @@ img{
 #showcase .container{}
 #showcase .text{
     text-align: center;
+    margin-bottom: 4rem;
 }
 #showcase .text p{}
 #showcase .text h3{}
@@ -516,21 +532,24 @@ img{
 }
 #showcase .grid-section .media-item{
     flex: 1 0 350px;
+    min-height: 295px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 #showcase .grid-section .media-item img{
-    width: 90%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-#showcase .grid-section .media-item:nth-child(1) img{
+#showcase .grid-section .media-item:nth-child(1){
     width: 100%;
 }
 #showcase .grid-section .text-item{
     flex: 1 1 350px;
-    padding: 3rem;
-    padding-right: 5rem;
+    padding: 15vw;
+    padding-right: 25vw;
+    background-color: #F0F1EC;
     border: 2px solid var(--primary-color-main);
 }
 #showcase .grid-section .text-item h5{
@@ -543,8 +562,11 @@ img{
     margin-bottom: 25px;
 }
 #showcase .grid-section .text-item button{
-    background-color: var(--primary-color-light);
+    width: unset;
+    background-color:#F0EDE2;
     color: var(--primary-color-main);
+    padding: 1.25rem 2rem;
+    justify-content: center;
     transition: all .4s;
 }
 #showcase .grid-section .text-item button:hover{
@@ -553,6 +575,7 @@ img{
 }
 #showcase .grid-section .text-item button::after{
     background-image: url('/img/icons/color-right-arow.svg');
+    background-size: 90%;
 }
 #showcase .grid-section .text-item button:hover::after{
     background-image: url('/img/icons/arrow-right.svg');
@@ -581,7 +604,7 @@ img{
 }
 #products .products .product{
     flex: 1 0 268px;
-    padding: 24px;
+    padding: 40px 24px;
     border: 2px solid rgba(118, 118, 117, 0.25);
     display: flex;
     flex-direction: column;
@@ -618,11 +641,14 @@ img{
     padding: 10px;
 }
 #products .products .product .price .reguler{
-    color-adjust: var(--text-clor-light);
-
+    color: #767675;
 }
 #products .products .product .price .sale{
     color: var(--primary-color-main);
+}
+#products .products .product button{
+    width: unset;
+    padding: 1.15rem 2rem;
 }
 
 /* ==================================
@@ -648,6 +674,9 @@ img{
     line-height: 1.4;
     color: #fff;
     margin-bottom: 15px;
+}
+#viggeie-food button{
+    justify-content: center;
 }
 
 /* ===================================
@@ -685,6 +714,7 @@ img{
 #main-footer .first-row .widgets1 p,
 #main-footer .first-row .widgets4 p{
     margin-bottom: 2rem;
+    line-height: 1.5;
 }
 #main-footer .first-row .widgets1 .social{}
 #main-footer .first-row .widgets1 .social i{
@@ -710,6 +740,17 @@ img{
 #main-footer .first-row .widgets2 ul li,
 #main-footer .first-row .widgets3 ul li{
     padding: .5rem 0;
+    cursor: pointer;
+    transition: all .4s ease-out;
+}
+#main-footer .first-row .widgets2 ul li:hover,
+#main-footer .first-row .widgets3 ul li:hover{
+    color: var(--primary-color-main);
+}
+#main-footer .first-row .widgets2 ul li a,
+#main-footer .first-row .widgets3 ul li a{
+    text-decoration: none;
+    color: inherit;
 }
 #main-footer .first-row .widgets4 p{}
 #main-footer .first-row .widgets4 form{
@@ -726,6 +767,8 @@ img{
     background: #F0F1EC;
     padding: .75rem 1rem;
     font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
 }
 #main-footer .first-row .widgets4 form input[type="submit"]{
     padding: 1rem;
@@ -803,7 +846,10 @@ img{
         padding: 2rem 4rem 8rem;
     }
     #hero .text h1{
-        font-size: calc(2.5rem + 2.5vw);
+        font-size: calc(3rem + 2.5vw);
+    }
+    #hero .text p{
+        font-size: calc(1rem + 1vw);
     }
     /* Feature Item */
     #features .feature-item {
@@ -812,6 +858,15 @@ img{
     #stars .text .counters {
         flex-direction: row;
         gap: 50px;
+    }
+    #showcase .grid-section .text-item h5{
+        font-size: 4rem;
+    }
+    #showcase .grid-section .text-item p{
+        font-size: 2rem;
+    }
+    #showcase .grid-section .text-item buttton{
+        font-size: 2rem;
     }
 }
 /* lg */
@@ -840,7 +895,6 @@ img{
     }
     #hero .container{
         height: 100%;
-        display: flex;
         flex-direction: row;
         align-items: stretch;
         position: relative;
@@ -862,6 +916,7 @@ img{
         margin-bottom: .75rem;
     }
     #hero .text p{
+        font-size: 1rem;
         margin-bottom: 1.75rem;
         line-height: 1.5;
     }
@@ -948,6 +1003,12 @@ img{
     #features .feature-item .text{
         text-align: left;
     }
+    #showcase .grid-section .text-item h5{
+        font-size: 2rem;
+    }
+    #showcase .grid-section .text-item p{
+        font-size: 1rem;
+    }
     /* ====================================
     ** Our Stars Section
     ** ==================================== */
@@ -982,7 +1043,7 @@ img{
     #showcase .grid-section .text-item{
         flex: 1 0 24%;
         width: 290px;
-        height: 290px;
+        min-height: 290px;
     }
     #showcase .grid-section .media-item{
         overflow: hidden;
@@ -1031,7 +1092,10 @@ img{
         flex: 1 0 24%;    
     }
     #products .products .product h4{
-        font-size: 1.3rem;
+        font-size: 1.25rem;
+    }
+    #products .products .product buttton{
+        padding: 1rem 2rem;
     }
     /* ==================================
     ** Viggie Food Section
@@ -1080,6 +1144,7 @@ img{
 
     #main-footer .first-row .widgets4 form{
         flex-direction: row;
+        gap: 0;
     }
     #main-footer .first-row .widgets4 form input[type="email"]{
         background: #F0F1EC;
