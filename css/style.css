@@ -1034,6 +1034,9 @@ img{
     #stars .text .counters {
         justify-content: start;
     }
+    #stars .text button {
+        width: unset;
+    }
 
     /* Showcase */
     #showcase .grid-section {
