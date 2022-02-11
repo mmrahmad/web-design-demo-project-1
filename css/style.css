@@ -447,7 +447,7 @@ img{
     background-color: var(--primary-color-light);
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -455,7 +455,7 @@ img{
 #stars .media picture{
     width: 85%;
     margin: 0 auto;
-    transform: translateY(-4rem);
+    transform: translateY(-2rem);
 }
 #benifit .media picture *,
 #stars .media picture *{
@@ -1012,6 +1012,15 @@ img{
     /* ====================================
     ** Our Stars Section
     ** ==================================== */
+    #benifit .media,
+    #stars .media{
+        margin-top: 0;
+        padding-bottom: 4rem
+    }
+    #benifit .media picture,
+    #stars .media picture{
+        transform: translateY(0);
+    }
     #benifit,
     #stars,
     #products{
@@ -1021,7 +1030,7 @@ img{
     #stars .container {
         flex-direction: row;
         align-items: center;
-        gap: 2.25rem;
+        gap: 5rem;
     }
     #benifit .text, #stars .text {
         text-align: left;
